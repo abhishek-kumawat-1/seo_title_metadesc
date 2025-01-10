@@ -72,22 +72,25 @@ if uploaded_file is not None:
                 st.dataframe(property_count)
 
                 # Provide a download button for the updated DataFrame
-                @st.cache_data
-                def convert_df_to_excel(df):
-                    buffer = io.BytesIO()
-                    with pd.ExcelWriter(buffer, engine='xlsxwriter') as writer:
-                        df.to_excel(writer, index=False, sheet_name="Updated Data")
-                        writer.save()
-                    buffer.seek(0)
-                    return buffer
+                # @st.cache_data
+                # def convert_df_to_excel(df):
+                #     buffer = io.BytesIO()
+                #     with pd.ExcelWriter(buffer, engine='xlsxwriter') as writer:
+                #         df.to_excel(writer, index=False, sheet_name="Updated Data")
+                #         writer.save()
+                #     buffer.seek(0)
+                #     return buffer
 
-                excel_data = convert_df_to_excel(property_count)
-                st.download_button(
-                    label="Download Updated Data as Excel",
-                    data=excel_data,
-                    file_name="updated_property_count.xlsx",
-                    mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-                )
+                # excel_data = convert_df_to_excel(property_count)
+                # st.download_button(
+                #     label="Download Updated Data as Excel",
+                #     data=excel_data,
+                #     file_name="updated_property_count.xlsx",
+                #     mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                # )
+                st.success("Variations successfully added to the DataFrame.")
+                st.write("### Updated Property Count DataFrame")
+                st.dataframe(property_count)
             else:
                 st.error("Required columns 'Suffix' and 'Count' are missing in the uploaded file.")
         else:
