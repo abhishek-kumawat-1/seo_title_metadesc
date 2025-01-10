@@ -5,7 +5,8 @@ import openpyxl
 #LinkedIn Profile
 with st.sidebar:
        st.components.v1.html(
-             """ <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="abhishek-kumawat-0530671ba" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/abhishek-kumawat-0530671ba?trk=profile-badge">Abhishek Kumawat</a></div>"""
+             """ <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+             <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="abhishek-kumawat-0530671ba" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/abhishek-kumawat-0530671ba?trk=profile-badge">Abhishek Kumawat</a></div>"""
               
        )
 # Streamlit app title
