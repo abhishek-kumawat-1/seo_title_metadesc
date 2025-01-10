@@ -4,7 +4,7 @@ import io
 import openpyxl
 #LinkedIn Profile
 with st.sidebar:
-    st.write("### Built by Abhishek Kumawat")
+    st.write("### Abhishek Kumawat :sunglasses:")
     st.components.v1.html(
     """
     <div style="display: flex; justify-content: center;">
