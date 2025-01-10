@@ -5,8 +5,8 @@ import openpyxl
 #LinkedIn Profile
 with st.sidebar:
     st.components.v1.html(
-    """<a href="https://www.linkedin.com/in/abhishek-kumawat-0530671ba/">
-    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="25">
+    """<a href="https://www.linkedin.com/in/abhishek-kumawat-0530671ba/" target="_blank">
+    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="35">
     </a>"""
     )
 
