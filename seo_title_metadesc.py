@@ -3,17 +3,7 @@ import pandas as pd
 import io
 import openpyxl
 #LinkedIn Profile
-with st.sidebar:
-       st.components.v1.html(
-             """ 
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="abhishek-kumawat-0530671ba" data-version="v1">
-<a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/abhishek-kumawat-0530671ba">Abhishek Kumawat</a></div>
-              ,height=310
-
-              """
-              
-       )
+st.sidebar.markdown(“[!["Abhishek Kumawat"](‘https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg’)](‘https://www.linkedin.com/in/abhishek-kumawat-0530671ba/’)”)
 # Streamlit app title
 st.write("### Danish SEO Title & Meta Description According to Regions and Property Count")
 st.write("### How to Use?")
