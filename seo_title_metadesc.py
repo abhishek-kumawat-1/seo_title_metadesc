@@ -3,11 +3,12 @@ import pandas as pd
 import io
 import openpyxl
 #LinkedIn Profile
-st.sidebar.markdown(
+st.sidebar:
+    st.components.v1.html(
     """<a href="https://www.linkedin.com/in/abhishek-kumawat-0530671ba/">
     <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="25">
     </a>"""
-)
+    )
 
 # Streamlit app title
 st.write("### Danish SEO Title & Meta Description According to Regions and Property Count")
