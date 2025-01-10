@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 import io
 import openpyxl
+#LinkedIn Profile
+with st.sidebar:
+       components.html(
+              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="abhishek-kumawat-0530671ba" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/abhishek-kumawat-0530671ba?trk=profile-badge">Abhishek Kumawat</a></div>
+              
+       )
 # Streamlit app title
 st.write("### Danish SEO Title & Meta Description According to Regions and Property Count")
 st.write("### How to Use?")
