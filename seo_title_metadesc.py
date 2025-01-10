@@ -5,9 +5,9 @@ import openpyxl
 # Streamlit app title
 st.title("Danish SEO Title & Meta Description According to Regions and Property Count")
 st.write("### How to Use?")
-st.write(f"1. Upload excel file having a sheet named -real- 
-        2. The sheet must contain the Suffix, region and Count columns 
-        PS : The sheet name and columns name are case sensitive.")
+st.write("1. Upload excel file having a sheet named -real- \n"
+       " 2. The sheet must contain the Suffix, region and Count columns \n"
+       " PS : The sheet name and columns name are case sensitive.")
 
 # Editable variables with placeholders
 # language = st.text_input("Enter Language:", value="Danish", placeholder="e.g., Danish")
