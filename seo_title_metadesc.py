@@ -3,7 +3,9 @@ import pandas as pd
 import io
 import openpyxl
 #LinkedIn Profile
-st.sidebar.markdown(“[!["Abhishek Kumawat"](‘https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg’)](‘https://www.linkedin.com/in/abhishek-kumawat-0530671ba/’)”)
+st.sidebar.markdown("""
+                    [!["Abhishek Kumawat"](‘https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg’)](‘https://www.linkedin.com/in/abhishek-kumawat-0530671ba/’)
+                    """)
 # Streamlit app title
 st.write("### Danish SEO Title & Meta Description According to Regions and Property Count")
 st.write("### How to Use?")
