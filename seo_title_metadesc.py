@@ -3,16 +3,16 @@ import pandas as pd
 import io
 import openpyxl
 # Streamlit app title
-st.title("###Danish SEO Title & Meta Description According to Regions and Property Count")
+st.write("###Danish SEO Title & Meta Description According to Regions and Property Count")
 st.write("### How to Use?")
 st.write("1. Upload excel file having a sheet named -real- \n"
-       " 2. The sheet must contain the Suffix, region and Count columns\n"
-       " PS : The sheet name and columns name are case sensitive.")
+       " 2. The sheet must contain the Suffix, region and Count columns\n")
+st.warning('The sheet name and columns name are case sensitive.', icon="⚠️")
 
 # Editable variables with placeholders
 # language = st.text_input("Enter Language:", value="Danish", placeholder="e.g., Danish")
 discount = st.text_input("Enter Discount:", value="20%", placeholder="e.g., 20%")
-amount = st.text_input("Enter Amount:", value="€50", placeholder="e.g., €50")
+amount = st.text_input("Enter Discount Upto Amount:", value="€50", placeholder="e.g., €50")
 
 # Display the current values of the variables
 # st.write("### Editable Variables")
@@ -21,7 +21,7 @@ amount = st.text_input("Enter Amount:", value="€50", placeholder="e.g., €50"
 # st.write(f"**Amount:** {amount}")
 
 # File uploader for Excel file
-uploaded_file = st.file_uploader("Upload an Excel file", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload the Region and Property Count containing Excel file", type=["xlsx"])
 
 if uploaded_file is not None:
     try:
