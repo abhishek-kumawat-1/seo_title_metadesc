@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import io
-
+import openpyxl
 # Streamlit app title
 st.title("Load and Enhance Excel File with Variations")
 
